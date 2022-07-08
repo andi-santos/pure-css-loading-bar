@@ -1,0 +1,44 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+  
+}
+
+.text-wrapper {
+    position: relative;
+}
+.progress{
+    position: relative;
+    height: 70px;
+    width: 700px;
+    border: 1px solid transparent;
+    background-color: rgb(115, 115, 245);
+    transform: skew(-9deg) rotate(-9.49deg); 
+
+}
+.progress .color{
+    position: absolute;
+    background-color: blue;
+    width: 0px;
+    height: 100%;
+    animation: progres 2.5s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
